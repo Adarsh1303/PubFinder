@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:maxHeight="150dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/image_detail"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/name_detail"
+        android:textSize="18dp"
+        android:text="Name : "
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:id="@+id/address_detail"
+        android:text="Address : "
+        android:textSize="18dp"
+      />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/type_detail"
+        android:text="Type : "
+        android:textSize="18dp"
+ />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/rating_detail"
+        android:textSize="18dp"
+        android:text="Rating : "
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:id="@+id/phone_detail"
+        android:text="Phone No :"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/save"
+        android:text="Save"
+        android:onClick="save_place"
+        android:layout_marginBottom="0dp"/>
+
+
+
+
+</LinearLayout>

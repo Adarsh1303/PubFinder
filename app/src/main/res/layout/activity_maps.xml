@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.petr_panda.application.MapsActivity">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.petr_panda.application.MapsActivity"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true" />
+    
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="24dp"
+        android:id="@+id/myMarker"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/pointer"
+        />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:id="@+id/radiusArea"
+        android:hint="Radius(meters)"
+        android:inputType="numberDecimal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/myMarker" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:id="@+id/drawButton"
+        android:layout_alignStart="@+id/myMarker"
+        android:onClick="Draw"
+        android:layout_alignRight="@+id/radiusArea" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Pubs"
+        android:id="@+id/checkPubs"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#d17f05"
+        android:visibility="invisible"
+        android:onClick="displayList"/>
+</RelativeLayout>

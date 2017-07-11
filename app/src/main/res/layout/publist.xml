@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="List of Night Clubs"
+        android:id="@+id/textView"
+        android:textAlignment="gravity"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:background="#d17f05"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pubList"
+        android:layout_marginTop="18dp"/>
+</LinearLayout>
